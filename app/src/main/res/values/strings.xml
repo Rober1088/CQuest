@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">C++Quest</string>
+    <string name="sapo">Duolingo owl logo</string>
+    <string name="close_button">Cerrar</string>
+</resources>

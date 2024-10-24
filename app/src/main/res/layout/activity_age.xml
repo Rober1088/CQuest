@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A202C"
+    tools:ignore="ExtraText">
+
+    <!-- Close Button (X) -->
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_gravity="top|start"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/close_button"
+        android:src="@drawable/ic_close" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/quinquefive"
+            android:text="¿HOW OLD ARE YOU?"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/age_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+            android:maxLength="2"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="@font/quinquefive"
+        android:hint="Age"
+        android:padding="16dp"
+        android:textColor="#A0AEC0"
+            android:inputType="number"
+        android:textColorHint="#A0AEC0" />
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTINUE"
+            android:enabled="true"
+            android:fontFamily="@font/quinquefive"
+            android:backgroundTint="#00C900"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+</FrameLayout>

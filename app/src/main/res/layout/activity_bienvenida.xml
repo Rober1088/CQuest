@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a202c"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/bienvenida_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_textview"
+        android:padding="16dp"
+        android:text="¡Hola! Creaste tu perfil con éxito."
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/gif_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="Green cartoon owl with big eyes and a happy expression"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:text="CONTINUAR"
+        android:backgroundTint="#00C900"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+</LinearLayout>
