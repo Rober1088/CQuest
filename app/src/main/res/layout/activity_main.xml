@@ -16,29 +16,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#4CAF50"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:backgroundTint="@color/Verde_Encabezado">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Este LinearLayout contiene el encabezado y el texto "Niveles" -->
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="ETAPA 1, SECCIÓN 1"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp" />
+                android:orientation="vertical"
+                android:layout_weight="1"> <!-- Agregar peso para que ocupe todo el espacio disponible -->
 
-            <TextView
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="137dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/encabezado" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quinquefive"
+                    android:text="Niveles"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Esta es la imagen "guia" que se moverá a la derecha -->
+            <ImageView
+                android:id="@+id/guia"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Niveles"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:src="@drawable/guia" />
         </LinearLayout>
-
 
     </RelativeLayout>
 
