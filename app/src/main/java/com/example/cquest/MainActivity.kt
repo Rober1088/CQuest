@@ -34,8 +34,12 @@ class MainActivity : AppCompatActivity() {
     private fun loadLevels(): List<Level> {
         // Implementa esta función para devolver la lista de niveles
         return listOf(
-            Level("Nivel 1", "contact@example.com"),
-            Level("Nivel 2", "contact2@example.com")
+            Level("Nivel 1:", "Fundamentos de Programación"),
+            Level("Nivel 2:", "Estructuras de Control"),
+            Level("Nivel 3:", "Funciones y Métodos"),
+            Level("Nivel 4:", "Arrays y Listas"),
+            Level("Nivel 5:", "Punteros"),
+
             // Agrega más niveles aquí
         )
     }

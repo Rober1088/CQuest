@@ -15,18 +15,16 @@ class LevelAdapter(
     private val onItemClick: (Level) -> Unit) : RecyclerView.Adapter<LevelAdapter.LevelViewHolder>() {
 
     inner class LevelViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val name: TextView = itemView.findViewById(R.id.name)
-        private val contactEmail: TextView = itemView.findViewById(R.id.contactEmail)
+        private val Nivel: TextView = itemView.findViewById(R.id.Nivel)
+        private val Tema: TextView = itemView.findViewById(R.id.Tema)
         private val startLevelButton: Button = itemView.findViewById(R.id.Iniciar_Nivel)
-        private val sendEmailButton: Button = itemView.findViewById(R.id.SendEmailButton)
+
 
         fun bind(level: Level) {
-            name.text = level.name
-            contactEmail.text = level.email
+            Nivel.text = level.Nivel
+            Tema.text = level.Tema
             startLevelButton.setOnClickListener { onItemClick(level) }
-            sendEmailButton.setOnClickListener {
 
-            }
         }
     }
 
